@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Data Request</title>
+    <style>
+      /* Add styles for the page header */
+      .header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+      /* Add styles for the page content */
+  .content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Add styles for the form */
+  form {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Add styles for the form labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for the form input fields */
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Add styles for the submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add hover effect for the submit button */
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+</style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Delete Data Request</h1>
+      <p>Please fill out the form below to request the deletion of your data from our application.</p>
+    </div>
+    <div class="content">
+  <form action="/delete" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    
+    <label for="reason">Reason for data deletion:</label>
+    <textarea id="reason" name="reason" required></textarea>
+    
+    <input type="submit" value="Submit Request">
+  </form>
+</div>
+  </body>
+</html>
